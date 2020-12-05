@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 5rem;
+    /* Footer height */
+}
+
+header#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+
+.title {
+    color: #333333;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.notice {
+    margin: 0 1rem;
+}
+
+.divider {
+    width: 2px;
+    height: 20px;
+    background: #888888;
+}
+
+.name {
+    margin: 0 1rem;
+}
+
+#main-content {
+    margin-bottom: 2rem;
+}
+
+.title-content {
+    margin: 3rem 0rem;
+}
+
+.one-content {
+    margin-bottom: 1rem;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #666666;
+}
+
+.email-subscribe {
+    margin-top: 2rem;
+    padding: 30px 15px;
+    background: linear-gradient(135deg, #0079bf, #5067c5);
+    color: white;
+}
+
+.email-input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #333333 !important;
+    padding-left: 1rem;
+    font-size: 25px;
+}
+
+.items {
+    padding: 40px 15px;
+}
+
+.item {
+    margin-bottom: 4rem;
+}
+
+footer {
+    background: #333333;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+/*== Sign in layout ==*/
+
+.main {
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-height: 320px;
+}
+
+.left-side {
+    background: url('./assets/img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.signin {
+    height: 100%;
+    padding: 30px;
+}
+
+.title-signin {
+    color: #16020f;
+    text-align: center;
+}
+
+label {
+    color: #333333;
+    font-weight: bold;
+}
+
+.row {
+    margin-left: 0!important;
+    margin-right: 0 !important;
+}
+
+div[class^="col"] {
+    padding: 0!important;
+}
+
+button a {
+    color: white;
+}

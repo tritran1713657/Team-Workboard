@@ -377,10 +377,10 @@ line-height: 1.428571429;
 }
 
 /*==============================================
-    NEW     blue #0087fc    red  #e60602    yellow #e0d500
+    hndung     blue #0087fc    red  #e60602    yellow #e0d500
     =============================================*/
 
-.col-md-4 h4{
+.blue-text{
     text-align: right;
     color: #0087fc;
 }
