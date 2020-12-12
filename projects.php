@@ -185,7 +185,11 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; </div>
                         <h4><?php echo $row['end_date']; ?></h4>
                     </div>
                     <div class="col-md-2">
-                     	<button class="btn btn-primary"><?php echo $row['state']==0 ?  'In progress' : 'Done'; ?></button>
+                         <button class="btn btn-primary" onclick = "dropFunction()"><?php echo $row['state']==0 ?  'In progress' : 'Done'; ?></button>
+                         <div id="myDropdown" class="dropdown-content">
+                            <a href="#">In Progress</a>
+                            <a href="#">Done</a>
+                         </div>
                     </div>
                 </div> 
                 <?php
@@ -233,6 +237,25 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; </div>
                 modal.style.display = "none";
             }
         }
+
+        var state_btn = document.getElementById("btn btn-primary")
+        function dropFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+        }
+
     </script>
    
 </body>
